@@ -19,6 +19,6 @@ func Upload(c fiber.Ctx) error {
 		}
 	}
 	return c.JSON(fiber.Map{
-		"url": "http://127.0.0.1:8000/api/uploads/" + filename,
+		"url": "http://localhost:8000/api/uploads/" + filename,
 	})
 }

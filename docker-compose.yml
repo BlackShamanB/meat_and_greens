@@ -1,0 +1,28 @@
+version: '3'
+services:
+  frontend:
+    build: frontend/
+    ports:
+      - "8080:8080"
+    depends_on:
+      - backend
+
+  backend:
+    build: backend/
+    ports:
+      - "8000:8000"
+    depends_on:
+      - db
+
+  db:
+    image: mysql:5.7.22
+    build: .
+    environment:
+      MYSQL_ROOT_PASSWORD: 10203150112Zaa!
+      MYSQL_DATABASE: go_admin
+      MYSQL_USER: blackshaman
+      MYSQL_PASSWORD: 10203150112Zaa!
+    volumes:
+      - mysql-data:/var/lib/mysql
+volumes:
+  mysql-data:
