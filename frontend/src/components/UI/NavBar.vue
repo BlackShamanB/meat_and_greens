@@ -5,7 +5,7 @@
       <div @click="$router.push('/about')">О нас</div>
       <div @click="$router.push('/store')">Оптовикам</div>
       <div @click="$router.push('/composition')">Дистрибьютерам</div>
-      <div @click="$router.push('/about')">О сайте</div>
+      <!-- <div @click="$router.push('/about')">О сайте</div> -->
     </div>
   </div>
 </template>

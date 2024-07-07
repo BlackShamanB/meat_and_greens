@@ -27,6 +27,7 @@ export default {
   text-align: left;
 }
 .footer-item {
+  cursor: pointer;
   padding: 15px 20px;
 }
 </style>

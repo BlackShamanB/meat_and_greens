@@ -28,4 +28,7 @@ body {
   text-align: center;
   color: #2c3e50;
 }
+.app {
+  min-height: calc(100vh - 187px);
+}
 </style>
